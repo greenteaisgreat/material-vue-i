@@ -94,6 +94,8 @@ function closeMenu() {
   background: #f5f5f5;
 }
 
+/* vue's built-in classes for <Transition />, i.e.,
+'enter-active', 'leave-active', etc. */
 .dropdown-enter-active,
 .dropdown-leave-active {
   transition:

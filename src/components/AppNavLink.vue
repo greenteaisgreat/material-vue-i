@@ -13,6 +13,8 @@ interface Props {
   items?: DropdownItem[]
 }
 
+// baseline values for Props interface so typescript
+// doesn't complain if a value isn't provided
 const props = withDefaults(defineProps<Props>(), {
   href: '#',
   dropdown: false,

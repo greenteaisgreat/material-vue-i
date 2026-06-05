@@ -25,7 +25,7 @@ const props = withDefaults(defineProps<Props>(), {
 const isOpen = ref(false)
 
 // checks for any dropdown items
-const hasDropdown = computed(() => props.dropdown && props.items.length > 0)
+const hasDropdown = computed(() => props.items.length > 0)
 
 function openMenu() {
   if (hasDropdown.value) {

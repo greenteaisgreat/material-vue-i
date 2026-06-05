@@ -1,14 +1,42 @@
 <script setup lang="ts">
-  import AppNavLink from './components/AppNavLink.vue'
+import AppHeader from '@/components/AppHeader.vue'
+
+const links = [
+  {
+    label: 'Home',
+    href: '/',
+  },
+  {
+    label: 'Products',
+    dropdown: true,
+    items: [
+      {
+        label: 'Buttons',
+        href: '/buttons',
+      },
+      {
+        label: 'Inputs',
+        href: '/inputs',
+      },
+      {
+        label: 'Modals',
+        href: '/modals',
+      },
+    ],
+  },
+  {
+    label: 'Docs',
+    href: '/docs',
+  },
+]
 </script>
 
 <template>
-  <AppNavLink />
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <AppHeader :links="links" />
 </template>
 
-<style scoped></style>
+<style>
+body {
+  background-color: darkslategrey;
+}
+</style>

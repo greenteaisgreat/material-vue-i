@@ -31,4 +31,18 @@ defineProps<{
   </header>
 </template>
 
-<style scoped></style>
+<style scoped>
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-bottom: 1px solid #ddd;
+  height: 64px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+</style>

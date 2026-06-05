@@ -3,6 +3,7 @@ import AppNavLink from './AppNavLink.vue'
 
 interface NavItem {
   label: string
+  id: string | number
   href?: string
   dropdown?: boolean
   items?: {
@@ -21,7 +22,7 @@ defineProps<{
     <nav class="header__nav">
       <AppNavLink
         v-for="link in links"
-        :key="link.label"
+        :key="link.id"
         :label="link.label"
         :href="link.href"
         :dropdown="link.dropdown"

@@ -16,6 +16,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 <template>
   <button class="button" :class="`button--${props.variant}`" :disabled="props.disabled">
+    <!-- vue's placeholder for the button's label -->
     <slot />
   </button>
 </template>
@@ -30,12 +31,12 @@ const props = withDefaults(defineProps<Props>(), {
 }
 
 .button--primary {
-  background: #1976d3;
+  background: oklch(66.375% 0.12558 231.245);
   color: white;
 }
 
 .button--secondary {
-  background: #666;
+  background: oklch(50.62% 0.01741 281.596);
   color: white;
 }
 
@@ -45,7 +46,7 @@ const props = withDefaults(defineProps<Props>(), {
 }
 
 .button--danger {
-  background: coral;
+  background: oklch(58.163% 0.18023 22.146);
   color: white;
 }
 </style>

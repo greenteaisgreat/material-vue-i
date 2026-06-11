@@ -36,6 +36,7 @@ defineProps<{
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   padding: 0 2rem;
   border-bottom: 1px solid #ddd;
   height: 64px;
@@ -44,6 +45,7 @@ defineProps<{
 .header__nav {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 </style>
